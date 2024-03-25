@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const ShowHide = () => {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
 
-  return(
+  return (
     <>
-    
+      <button className=""btn></button>
     </>
-  )
+  );
 };
 
 export default ShowHide;
