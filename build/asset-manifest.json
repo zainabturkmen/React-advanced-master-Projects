@@ -6,8 +6,5 @@
     "main.d4becaef.css.map": "/static/css/main.d4becaef.css.map",
     "main.eb8877bb.js.map": "/static/js/main.eb8877bb.js.map"
   },
-  "entrypoints": [
-    "static/css/main.d4becaef.css",
-    "static/js/main.eb8877bb.js"
-  ]
+  "entrypoints": ["static/css/main.d4becaef.css", "static/js/main.eb8877bb.js"]
 }
