@@ -5,9 +5,12 @@ const ShowHide = () => {
 
   return (
     <>
-      <button className=""btn onClick={() => setShow(!show)}>show/hide</button>
+      <button className="" btn onClick={() => setShow(!show)}>
+        show/hide
+      </button>
     </>
   );
 };
 
+const Item = () => {};
 export default ShowHide;
