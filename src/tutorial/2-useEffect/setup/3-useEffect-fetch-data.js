@@ -28,6 +28,7 @@ const UseEffectFetchData = () => {
               <img src={avatar_url} alt={login} />
               <div>
                 <h4>{login}</h4>
+                <a href={html_url}>profile</a>
               </div>
             </li>
           );
