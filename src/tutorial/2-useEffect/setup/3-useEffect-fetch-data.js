@@ -14,7 +14,7 @@ const githubUsers = async() => {
 }
 
  useEffect(() => {
-
+  githubUsers();
  }, [])
 
 
