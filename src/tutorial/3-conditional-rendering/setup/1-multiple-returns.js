@@ -9,11 +9,11 @@ const MultipleReturns = () => {
   useEffect(() => {
     fetch(url)
       .then((res) => {
-        if(res.status >= 200 && res.status <= 299){
+        if (res.status >= 200 && res.status <= 299) {
           return res.json();
-        }
-        else{
-          setIsLoading()
+        } else {
+          setIsLoading(false);
+          setError(true);
         }
       })
       .then((user) => {
