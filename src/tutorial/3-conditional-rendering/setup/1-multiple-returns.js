@@ -13,6 +13,13 @@ const MultipleReturns = () => {
       </div>
     );
   }
+  if (erroe) {
+    return (
+      <div>
+        <h1>Erorr....</h1>
+      </div>
+    );
+  }
   return <h2>Multiple Loading...</h2>;
 };
 
