@@ -14,7 +14,7 @@ const ShortCircuit = () => {
       <h1>vlaue: {secondValue}</h1> */}
       <h1>{text || "John Doe"}</h1>
       <button className="btn">toggle error</button>
-      {text && <h1>Hello world</h1>}
+      {isError && <h1>Hello world</h1>}
     </>
   );
 };
