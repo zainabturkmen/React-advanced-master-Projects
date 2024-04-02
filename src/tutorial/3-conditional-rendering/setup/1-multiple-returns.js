@@ -14,6 +14,7 @@ const MultipleReturns = () => {
         } else {
           setIsLoading(false);
           setError(true);
+          throw new Error(res.statusText);
         }
       })
       .then((user) => {
