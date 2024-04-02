@@ -10,6 +10,7 @@ const ShortCircuit = () => {
   return (
     <>
     <h1>{firstValue}</h1>
+    <h1>vlaue: {firstValue}</h1>
   </>
   )
 };
