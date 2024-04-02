@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 const url = "https://api.github.com/users/QuincyLarson";
 
 const MultipleReturns = () => {
-  const [isloading, setIsLoading] = useState(true);
+  const [isloading, setIsLoading] = useState(false);
   const [erroe, setError] = useState(false);
   const [user, setUsers] = useState("default user");
 
@@ -20,7 +20,7 @@ const MultipleReturns = () => {
       </div>
     );
   }
-  return <h2>Multiple Loading...</h2>;
+  return <h2>{user}</h2>;
 };
 
 export default MultipleReturns;
