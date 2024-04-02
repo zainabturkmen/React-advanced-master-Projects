@@ -12,6 +12,9 @@ const MultipleReturns = () => {
         if(res.status >= 200 && res.status <= 299){
           return res.json();
         }
+        else{
+          setIsLoading()
+        }
       })
       .then((user) => {
         const { login } = user;
