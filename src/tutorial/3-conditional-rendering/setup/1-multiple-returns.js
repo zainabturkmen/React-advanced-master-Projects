@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 const url = "https://api.github.com/users/QuincyLarson";
 
 const MultipleReturns = () => {
@@ -9,8 +9,8 @@ const MultipleReturns = () => {
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
-      .then((user)=> {
-        
+      .then((user) => {
+        const { login } = user;
       })
       .catch((error) => console.log(error));
   }, []);
