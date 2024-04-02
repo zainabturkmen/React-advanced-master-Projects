@@ -7,10 +7,11 @@ const ShortCircuit = () => {
   const firstValue = text || "hello world";
   const secondValue = text && "hello world";
 
-  return
-  <>
-    <h1>{text}</h1>
-   </>;
+  return (
+    <>
+    <h1>{firstValue}</h1>
+  </>
+  )
 };
 
 export default ShortCircuit;
