@@ -3,11 +3,12 @@ import React, { useState } from "react";
 // ternary operator
 
 const ShortCircuit = () => {
+  
   // const firstValue = text || 'hello world';
   // const secondValue = text && 'hello world';
 
-  return <>
-  </>;
+  return;
+  <>  </>;
 };
 
 export default ShortCircuit;
