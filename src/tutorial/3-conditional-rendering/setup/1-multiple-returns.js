@@ -7,6 +7,7 @@ const MultipleReturns = () => {
   const [user, setUsers] = useState("default user");
 
   useEffect(() => {
+    setIsLoading(true)
     fetch(url)
       .then((res) => res.json())
       .then((user) => {
