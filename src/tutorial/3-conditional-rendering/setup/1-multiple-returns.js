@@ -11,6 +11,8 @@ const MultipleReturns = () => {
       .then((res) => res.json())
       .then((user) => {
         const { login } = user;
+        setUsers(login);
+        setIsLoading(false);
       })
       .catch((error) => console.log(error));
   }, []);
