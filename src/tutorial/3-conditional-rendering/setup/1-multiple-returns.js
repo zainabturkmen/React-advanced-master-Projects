@@ -2,12 +2,11 @@ import React, { useState, useEffect, useCallback } from "react";
 const url = "https://api.github.com/users/QuincyLarson";
 
 const MultipleReturns = () => {
-  const [isloading, setIsLoading] = useState(false);
+  const [isloading, setIsLoading] = useState(true);
   const [erroe, setError] = useState(false);
   const [user, setUsers] = useState("default user");
 
   useEffect(() => {
-    setIsLoading(true)
     fetch(url)
       .then((res) => res.json())
       .then((user) => {
