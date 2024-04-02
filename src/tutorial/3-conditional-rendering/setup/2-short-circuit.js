@@ -4,8 +4,8 @@ import React, { useState } from "react";
 
 const ShortCircuit = () => {
   const [text, setText] = useState(".");
-  const firstValue = text || "hello world";
-  const secondValue = text && "hello world";
+  // const firstValue = text || "hello world";
+  // const secondValue = text && "hello world";
 
   return (
     <>
@@ -14,7 +14,6 @@ const ShortCircuit = () => {
       <h1>{text || "John Doe"}</h1>
       <button className="btn">toggle error</button>
       {text && <h1>Hello world</h1>}
-      {!text && <h1>Hello world</h1>}
     </>
   );
 };
