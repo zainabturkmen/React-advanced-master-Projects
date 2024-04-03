@@ -15,9 +15,9 @@ const ShowHide = () => {
 const Item = () => {
   const [size, setSize] = useState(window.innerWidth);
 
-  const checkSize = ()=> {
-    setSize(window.window)
-  }}
+  const checkSize = () => {
+    return setSize(window.window)
+  }
 
   useEffect(() => {
     window.addEventListener("resize", checkSize);
@@ -28,7 +28,7 @@ const Item = () => {
       <h1>Window</h1>
       <h2>size : </h2>
     </div>
-  );
-};
+  )
+}
 
 export default ShowHide;
