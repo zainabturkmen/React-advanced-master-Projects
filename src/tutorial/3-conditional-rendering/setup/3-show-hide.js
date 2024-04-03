@@ -23,7 +23,7 @@ const Item = () => {
     window.addEventListener("resize", checkSize);
     return() => {
       window.removeEventListener("resize", checkSize)
-    }
+    };
   }, []);
 
   return (
