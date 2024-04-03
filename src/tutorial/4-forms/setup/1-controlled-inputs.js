@@ -10,7 +10,7 @@ const ControlledInputs = () => {
     <>
       <article>
         <form className="form">
-          
+          <div className="form-control"></div>
         </form>
       </article>
     </>
