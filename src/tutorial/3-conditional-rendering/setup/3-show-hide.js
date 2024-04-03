@@ -16,8 +16,8 @@ const Item = () => {
   const [size, setSize] = useState(window.innerWidth);
 
   const checkSize = () => {
-    return setSize(window.window)
-  }
+    return setSize(window.window);
+  };
 
   useEffect(() => {
     window.addEventListener("resize", checkSize);
@@ -26,9 +26,9 @@ const Item = () => {
   return (
     <div style={{ marginTop: "2rem" }}>
       <h1>Window</h1>
-      <h2>size :{size} </h2>
+      <h2>size :{size}px </h2>
     </div>
-  )
-}
+  );
+};
 
 export default ShowHide;
