@@ -9,7 +9,7 @@ const ControlledInputs = () => {
   return (
     <>
       <article>
-        <form className="form">
+        <form className="form" onStalledCapture={handleSubmit}>
           <div className="form-control">
             <label htmlFor="firstName">Name : </label>
             <input type="text" id="firstName" name="firstName" />
