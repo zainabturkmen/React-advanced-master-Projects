@@ -6,10 +6,10 @@ import React, { useState } from "react";
 // value, onChange
 
 const ControlledInputs = () => {
-
-  const handleSubmit = () => {
-    
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("hello world");
+  };
   return (
     <>
       <article>
