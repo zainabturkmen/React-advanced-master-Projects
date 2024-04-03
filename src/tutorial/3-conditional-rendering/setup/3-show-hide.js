@@ -15,8 +15,12 @@ const ShowHide = () => {
 const Item = () => {
   const [size, setSize] = useState(innerWidth);
 
+  const checkSize = ()=> {
+    
+  }}
+
   useEffect(() => {
-    window.addEventListener("resize", chekSize);
+    window.addEventListener("resize", checkSize);
   }, []);
 
   return (
