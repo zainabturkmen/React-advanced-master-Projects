@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // JS
 // const input = document.getElementById('myText');
 // const inputValue = input.value
@@ -8,8 +8,11 @@ import React, { useState } from 'react';
 const ControlledInputs = () => {
   return (
     <>
+      <article>
+        
+      </article>
     </>
-  )
+  );
 };
 
 export default ControlledInputs;
