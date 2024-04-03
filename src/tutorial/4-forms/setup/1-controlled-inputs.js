@@ -11,7 +11,8 @@ const ControlledInputs = () => {
       <article>
         <form className="form">
           <div className="form-control">
-            <label>Name : </label>
+            <label htmlFor="firstName">Name : </label>
+            <input type="text" id="firstName" name="firstName" />
           </div>
         </form>
       </article>
