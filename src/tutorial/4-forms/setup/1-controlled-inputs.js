@@ -6,6 +6,10 @@ import React, { useState } from "react";
 // value, onChange
 
 const ControlledInputs = () => {
+
+  const handleSubmit = () => {
+    
+  }
   return (
     <>
       <article>
