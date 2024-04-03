@@ -13,10 +13,10 @@ const ShowHide = () => {
 };
 
 const Item = () => {
-  const [size, setSize] = useState(innerWidth);
+  const [size, setSize] = useState(window.innerWidth);
 
   const checkSize = ()=> {
-    
+    setSize(window.window)
   }}
 
   useEffect(() => {
