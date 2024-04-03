@@ -5,7 +5,7 @@ const ShowHide = () => {
 
   return (
     <>
-      <button className=""btn></button>
+      <button className=""btn onClick={() => setShow(!show)}></button>
     </>
   );
 };
