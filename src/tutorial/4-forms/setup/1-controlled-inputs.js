@@ -9,7 +9,9 @@ const ControlledInputs = () => {
   return (
     <>
       <article>
-        
+        <form className="form">
+          
+        </form>
       </article>
     </>
   );
