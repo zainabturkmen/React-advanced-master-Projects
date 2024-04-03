@@ -16,7 +16,7 @@ const Item = () => {
   const [size, setSize] = useState(window.innerWidth);
 
   const checkSize = () => {
-    return setSize(window.window);
+    return setSize(window.innerWidth);
   };
 
   useEffect(() => {
