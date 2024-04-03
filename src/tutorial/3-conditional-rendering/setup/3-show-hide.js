@@ -16,10 +16,10 @@ const Item = () => {
   const [size, setSize] = useState(innerWidth)
 
   useEffect(() => {
-
+    window.addEventListener()
   },[])
 
-  
+
   return (
     <div style={{ marginTop: '2rem' }}>
       <h1>Window</h1>
