@@ -13,6 +13,7 @@ const ShowHide = () => {
 const Item = () => {
   return <div style={{marginTop: "2rem"}}>
     <h1>Window</h1>
+    <h2>size : </h2>
   </div>
 }
 export default ShowHide;
