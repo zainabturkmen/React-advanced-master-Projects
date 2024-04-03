@@ -14,6 +14,10 @@ const ShowHide = () => {
 
 const Item = () => {
   const [size, setSize] = useState(innerWidth)
+
+  useEffect(() => {
+    
+  },[])
   return (
     <div style={{ marginTop: '2rem' }}>
       <h1>Window</h1>
