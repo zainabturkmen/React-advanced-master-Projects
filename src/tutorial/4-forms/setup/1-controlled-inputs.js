@@ -10,6 +10,7 @@ const ControlledInputs = () => {
   const handleSubmit = () => {
     console.log("hello wrold");
   }
+  
   return (
     <>
       <article>
