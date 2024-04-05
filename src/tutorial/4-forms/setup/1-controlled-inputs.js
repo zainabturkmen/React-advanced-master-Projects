@@ -8,6 +8,9 @@ import React, { useState } from "react";
 const ControlledInputs = () => {
    return (
     <>
+    <article>
+      <form className="form"></form>
+    </article>
     </>
    )
 };
