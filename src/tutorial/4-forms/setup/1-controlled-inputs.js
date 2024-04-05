@@ -23,7 +23,7 @@ const ControlledInputs = () => {
               id="firstName"
               name="firstName"
               value={firstName}
-              // onChange={(e) => setFirstName(e.target.value)}
+              onChange={(e) => setFirstName(e.target.value)}
             />
           </div>
           <div className="form-control">
@@ -33,7 +33,7 @@ const ControlledInputs = () => {
             id="email" 
             name="email" 
             value={email}
-            // onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
              />
           </div>
           <button type="submit" onClick={handleSubmit}>
