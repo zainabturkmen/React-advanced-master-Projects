@@ -7,14 +7,14 @@ import React, { useState } from "react";
 
 const ControlledInputs = () => {
 
-  // const handleSubmit = () => {
-  //   console.log("hello wrold");
-  // }
+  const handleSubmit = () => {
+    console.log("hello wrold");
+  }
 
   return (
     <>
       <article>
-        <form className="form" onSubmit={()=> handleSubmit(console.log("hello world"))}>
+        <form className="form" onSubmit={handleSubmit}>
           <div className="form-control">
             <label htmlFor="firstName">Name : </label>
             <input type="text" id="firstName" name="firstName" />
