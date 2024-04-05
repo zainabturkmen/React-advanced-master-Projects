@@ -23,6 +23,7 @@ const ControlledInputs = () => {
               id="firstName"
               name="firstName"
               value={firstName}
+              onChange={() => }
             />
           </div>
           <div className="form-control">
