@@ -23,7 +23,7 @@ const ControlledInputs = () => {
               id="firstName"
               name="firstName"
               value={firstName}
-              onChange={() => }
+              onChange={() => setFirstName}
             />
           </div>
           <div className="form-control">
