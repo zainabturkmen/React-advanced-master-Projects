@@ -6,13 +6,22 @@ import React, { useState } from "react";
 // value, onChange
 
 const ControlledInputs = () => {
-   return (
+  return (
     <>
-    <article>
-      <form className="form"></form>
-    </article>
+      <article>
+        <form className="form">
+          <div className="form-control">
+            <label htmlFor="firstName">Name : </label>
+            <input type="text" id="firstName" name="firstName" />
+          </div>
+          <div className="form-control">
+            <label htmlFor="firstName">Name : </label>
+            <input type="text" id="firstName" name="firstName" />
+          </div>
+        </form>
+      </article>
     </>
-   )
+  );
 };
 
 export default ControlledInputs;
