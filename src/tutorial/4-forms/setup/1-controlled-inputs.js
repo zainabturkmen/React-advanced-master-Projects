@@ -33,6 +33,7 @@ const ControlledInputs = () => {
             id="email" 
             name="email" 
             value={email}
+            onChange={(e) => setEmail(e.)}
              />
           </div>
           <button type="submit" onClick={handleSubmit}>
