@@ -7,7 +7,7 @@ import React, { useState } from "react";
 
 const ControlledInputs = () => {
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     console.log("hello wrold");
   }
 
