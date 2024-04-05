@@ -8,6 +8,7 @@ import React, { useState } from "react";
 const ControlledInputs = () => {
 
   const handleSubmit = (e) => {
+    e.preventDefault()
     console.log("hello wrold");
   }
 
