@@ -6,6 +6,7 @@ import React, { useState } from "react";
 // value, onChange
 
 const ControlledInputs = () => {
+  const [firstName, setFirstName] = 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("hello world");
