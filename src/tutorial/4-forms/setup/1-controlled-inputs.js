@@ -27,7 +27,7 @@ const ControlledInputs = () => {
           </div>
           <div className="form-control">
             <label htmlFor="email">Email : </label>
-            <input type="text" id="email" name="email"  value={email}/>
+            <input type="text" id="email" name="email" value={email} />
           </div>
           <button type="submit" onClick={handleSubmit}>
             add person
