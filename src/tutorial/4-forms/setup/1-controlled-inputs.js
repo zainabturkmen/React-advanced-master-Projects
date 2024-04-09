@@ -8,7 +8,7 @@ import React, { useState } from "react";
 const ControlledInputs = () => {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
-  const [people, setPeople]
+  const [people, setPeople] = useState([])
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(firstName, email);
