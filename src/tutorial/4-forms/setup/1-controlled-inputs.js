@@ -11,6 +11,12 @@ const ControlledInputs = () => {
   const [people, setPeople] = useState([])
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (firstName && email) {
+      
+    }else{
+      setFirstName()
+      setEmail("")
+    }
   };
 
   return (
