@@ -14,7 +14,7 @@ const ControlledInputs = () => {
     if (firstName && email) {
       
     }else{
-      setFirstName()
+      setFirstName("")
       setEmail("")
     }
   };
