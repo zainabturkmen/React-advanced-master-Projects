@@ -13,6 +13,7 @@ const ControlledInputs = () => {
     e.preventDefault();
     if (firstName && email) {
       const person = {firstName, email}
+      setPeople((people) => {})
     }else{
       setFirstName("")
       setEmail("")
