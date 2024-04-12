@@ -8,15 +8,16 @@ import React, { useState } from "react";
 const ControlledInputs = () => {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
-  const [people, setPeople] = useState([])
+  const [people, setPeople] = useState([]);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (firstName && email) {
-      const person = {firstName, email}
-      setPeople((people) => {})
-    }else{
-      setFirstName("")
-      setEmail("")
+      const person = { firstName, email };
+      setPeople((people) => {});
+      return;
+    } else {
+      setFirstName("");
+      setEmail("");
     }
   };
 
@@ -31,7 +32,7 @@ const ControlledInputs = () => {
               id="firstName"
               name="firstName"
               value={firstName}
-              onChange={(e)=> setFirstName(e.target.value)}
+              onChange={(e) => setFirstName(e.target.value)}
             />
           </div>
           <div className="form-control">
@@ -41,7 +42,7 @@ const ControlledInputs = () => {
               id="email"
               name="email"
               value={email}
-              onChange={(e)=> setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <button type="submit">add person</button>
