@@ -14,9 +14,8 @@ const ControlledInputs = () => {
 
   const [people, setPeople] = useState([]);
 
-  const handleChange= (e) => {
-
-  }
+  const handleChange = (e) => {};
+  const handleSubmit = (e) => {};
 
   return (
     <>
@@ -52,7 +51,9 @@ const ControlledInputs = () => {
               onChange={handleChange}
             />
           </div>
-          <button type="submit">add person</button>
+          <button type="submit" onClick={handleSubmit}>
+            add person
+          </button>
         </form>
         {people.map((person, index) => {
           const { id, firstName, email } = person;
