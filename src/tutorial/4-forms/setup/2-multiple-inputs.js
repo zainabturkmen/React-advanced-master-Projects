@@ -14,11 +14,14 @@ const ControlledInputs = () => {
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-    setPerson({...person,[name]:value })
-  }
+    setPerson({ ...person, [name]: value });
+  };
 
   const handleSubmit = (e) => {
     e.prevenDefault();
+    if(person.firstName && person.email && person.age){
+      
+    }
   };
 
   return (
@@ -59,15 +62,15 @@ const ControlledInputs = () => {
             add person
           </button>
         </form>
-        {people.map((person, index) => {
+        {/* {people.map((person, index) => {
           const { id, firstName, email } = person;
           return (
             <div className="item" key={id}>
-              <h4>{firstName}</h4>
-              <p>{email}</p>
+              <h4>{person.firstName}</h4>
+              <p>{person.email}</p>
             </div>
           );
-        })}
+        })} */}
       </article>
     </>
   );
