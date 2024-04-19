@@ -7,9 +7,6 @@ import React, { useState } from "react";
 // dynamic object keys
 
 const ControlledInputs = () => {
-  // const [firstName, setFirstName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [age, setAge] = useState("");
   const [person, setPerson] = useState({ firstName: "", email: "", age: "" });
 
   const [people, setPeople] = useState([]);
