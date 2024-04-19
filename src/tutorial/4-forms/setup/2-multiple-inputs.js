@@ -10,22 +10,17 @@ const ControlledInputs = () => {
   // const [firstName, setFirstName] = useState("");
   // const [email, setEmail] = useState("");
   // const [age, setAge] = useState("");
-  const [person, setPerson] = { firstName: "", email: "", age: "" };
+  const [person, setPerson] = useState({ firstName: "", email: "", age: "" });
 
   const [people, setPeople] = useState([]);
 
-
   const handleChange = (e) => {
-    const name = e.traget.name
-    const value = e.traget.value
+    const name = e.
   };
-
-
   const handleSubmit = (e) => {
     e.prevenDefault();
   };
 
-  
   return (
     <>
       <article>
@@ -70,7 +65,6 @@ const ControlledInputs = () => {
             <div className="item" key={id}>
               <h4>{firstName}</h4>
               <p>{email}</p>
-              <p>{age}</p>
             </div>
           );
         })}
