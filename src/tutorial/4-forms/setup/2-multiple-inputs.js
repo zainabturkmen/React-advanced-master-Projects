@@ -4,32 +4,27 @@ import React, { useState } from "react";
 // const inputValue = input.value
 // React
 // value, onChange
-// dynamic object keys
 
 const ControlledInputs = () => {
   const [person, setPerson] = useState({ firstName: "", email: "", age: "" });
-
   const [people, setPeople] = useState([]);
-
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
     setPerson({ ...person, [name]: value });
   };
-
   const handleSubmit = (e) => {
-    e.prevenDefault();
+    e.preventDefault();
     if (person.firstName && person.email && person.age) {
       const newPerson = { ...person, id: new Date().getTime().toString() };
-      setPeople([...person, newPerson]);
-      setPerson({ firstName: "", email:"", age:""});
+      setPeople([...people, newPerson]);
+      setPerson({ firstName: "", email: "", age: "" });
     }
   };
-
   return (
     <>
-      <article>
-        <form className="form">
+      <article className="form">
+        <form>
           <div className="form-control">
             <label htmlFor="firstName">Name : </label>
             <input
@@ -51,23 +46,25 @@ const ControlledInputs = () => {
             />
           </div>
           <div className="form-control">
-            <label htmlFor="age">age : </label>
+            <label htmlFor="age">Age : </label>
             <input
-              type="age"
+              type="number"
               id="age"
               name="age"
               value={person.age}
               onChange={handleChange}
             />
           </div>
-          <button type="submit" onClick={handleSubmit}>
+          <button type="submit" className="btn" onClick={handleSubmit}>
             add person
           </button>
         </form>
-        {people.map((person, index) => {
+      </article>
+      <article>
+        {people.map((person) => {
           const { id, firstName, email, age } = person;
           return (
-            <div className="item" key={id}>
+            <div key={id} className="item">
               <h4>{firstName}</h4>
               <p>{email}</p>
               <p>{age}</p>
