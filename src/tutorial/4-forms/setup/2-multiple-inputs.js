@@ -64,15 +64,16 @@ const ControlledInputs = () => {
             add person
           </button>
         </form>
-        {/* {people.map((person, index) => {
-          const { id, firstName, email } = person;
+        {people.map((person, index) => {
+          const { id, firstName, email, age } = person;
           return (
             <div className="item" key={id}>
-              <h4>{person.firstName}</h4>
-              <p>{person.email}</p>
+              <h4>{firstName}</h4>
+              <p>{email}</p>
+              <p>{age}</p>
             </div>
           );
-        })} */}
+        })}
       </article>
     </>
   );
