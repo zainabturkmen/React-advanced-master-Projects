@@ -15,7 +15,9 @@ const ControlledInputs = () => {
   const [people, setPeople] = useState([]);
 
   const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.prevenDefault();
+  };
 
   return (
     <>
