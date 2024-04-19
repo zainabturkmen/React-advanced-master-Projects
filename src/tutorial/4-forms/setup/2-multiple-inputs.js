@@ -14,11 +14,18 @@ const ControlledInputs = () => {
 
   const [people, setPeople] = useState([]);
 
-  const handleChange = (e) => {};
+
+  const handleChange = (e) => {
+    const name = e.traget.name
+    const value = e.traget.value
+  };
+
+
   const handleSubmit = (e) => {
     e.prevenDefault();
   };
 
+  
   return (
     <>
       <article>
