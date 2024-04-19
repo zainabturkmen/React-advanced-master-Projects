@@ -14,7 +14,7 @@ const ControlledInputs = () => {
 
   const [people, setPeople] = useState([]);
 
-  const handleChange= () => {
+  const handleChange= (e) => {
 
   }
 
