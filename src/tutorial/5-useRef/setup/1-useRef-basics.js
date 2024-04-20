@@ -8,10 +8,12 @@ const UseRefBasics = () => {
 
 
   const refContainer = useRef(null)
+  const divContainer = useRef(null)
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log();
+    console.log(refContainer.current.value);
+    console.log(refContainer.current);
   }
 
   return (
@@ -21,6 +23,7 @@ const UseRefBasics = () => {
           <input type="text" ref={refContainer} />
           <button type="submit">submit</button>
         </div>
+        <div ref={divContainer}>janat</div>
       </form>
     </>
   );
