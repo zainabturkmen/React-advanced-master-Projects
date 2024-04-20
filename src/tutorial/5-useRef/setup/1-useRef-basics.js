@@ -7,9 +7,9 @@ import React, { useEffect, useRef } from "react";
 const UseRefBasics = () => {
   return (
     <>
-      <form >
+      <form className="form">
         <div>
-           
+           <input type="" />
         </div>
       </form>
     </>
