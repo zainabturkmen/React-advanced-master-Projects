@@ -15,9 +15,9 @@ const UseRefBasics = () => {
   };
 
   useEffect(() => {
+    console.log(refContainer.current.value);
+  });
 
-  })
-  
   return (
     <>
       <form className="form" onSubmit={handleSubmit}>
