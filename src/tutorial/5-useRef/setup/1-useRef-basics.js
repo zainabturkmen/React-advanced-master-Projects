@@ -18,7 +18,7 @@ const UseRefBasics = () => {
     <>
       <form className="form" onSubmit={handleSubmit}>
         <div>
-          <input type="text" />
+          <input type="text" ref={refContainer} />
           <button type="button">Submit</button>
         </div>
       </form>
