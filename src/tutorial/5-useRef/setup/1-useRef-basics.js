@@ -6,16 +6,20 @@ import React, { useEffect, useRef } from "react";
 
 const UseRefBasics = () => {
 
-  const handleSubmit = () => {
 
+  const refContainer = useRef(null)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log();
   }
-  
+
   return (
     <>
       <form className="form" onSubmit={handleSubmit}>
         <div>
-           <input type="text" />
-           <button type="submit">submit</button>
+          <input type="text" ref={refContainer} />
+          <button type="submit">submit</button>
         </div>
       </form>
     </>
