@@ -15,7 +15,8 @@ const UseRefBasics = () => {
   };
 
   useEffect(() => {
-    console.log(refContainer.current);
+    console.log(refContainer.current)
+    refContainer
   });
 
   return (
