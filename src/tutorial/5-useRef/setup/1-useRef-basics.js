@@ -11,6 +11,8 @@ const UseRefBasics = () => {
     e.preventdefault();
   };
 
+  console.log(refContainer);
+
   return (
     <>
       <form className="form" onSubmit={handleSubmit}>
