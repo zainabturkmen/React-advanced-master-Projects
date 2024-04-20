@@ -5,9 +5,14 @@ import React, { useEffect, useRef } from "react";
 // target DOM nodes/elements
 
 const UseRefBasics = () => {
+  
+  const handleSubmit = () => {
+
+  }
+
   return (
     <>
-      <form className="form" >
+      <form className="form" onSubmit={handleSubmit}>
         <div>
           <input type="text" />
           <button type="button">Submit</button>
