@@ -4,11 +4,10 @@ import React, { useEffect, useRef } from "react";
 // DOES NOT trigger re-render
 // target DOM nodes/elements
 
-
 const UseRefBasics = () => {
   return (
     <>
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="form" >
         <div>
           <input type="text" />
           <button type="button">Submit</button>
