@@ -9,7 +9,8 @@ const UseRefBasics = () => {
     <>
       <form className="form">
         <div>
-           <input type="" />
+           <input type="text" />
+           <button type="submit">submit</button>
         </div>
       </form>
     </>
