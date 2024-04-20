@@ -5,17 +5,18 @@ import React, { useEffect, useRef } from "react";
 // target DOM nodes/elements
 
 const UseRefBasics = () => {
-
-
-  const refContainer = useRef(null)
-  const divContainer = useRef(null)
+  const refContainer = useRef(null);
+  const divContainer = useRef(null);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     console.log(refContainer.current.value);
     console.log(refContainer.current);
-  }
+  };
 
+  useEffect(() => {
+    console.log(refContainer.current);
+  });
   return (
     <>
       <form className="form" onSubmit={handleSubmit}>
