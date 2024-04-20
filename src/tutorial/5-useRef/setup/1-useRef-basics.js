@@ -15,8 +15,9 @@ const UseRefBasics = () => {
   };
 
   useEffect(() => {
-    
+
   })
+  
   return (
     <>
       <form className="form" onSubmit={handleSubmit}>
