@@ -5,8 +5,7 @@ import React, { useEffect, useRef } from "react";
 // target DOM nodes/elements
 
 const UseRefBasics = () => {
-
-  const refContainer = 
+  const refContainer = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventdefault();
