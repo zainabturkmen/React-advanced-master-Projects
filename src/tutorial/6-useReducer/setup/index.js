@@ -10,7 +10,7 @@ const Index = () => {
   const []
   return <>
   {showModal && <Modal />}
-  <form className=''></form>
+  <form className='' onSubmit={handleSubmit}></form>
   </>
 };
 
