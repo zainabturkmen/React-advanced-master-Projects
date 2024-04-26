@@ -7,8 +7,9 @@ const reducer = (state, action) => {
 
 }
 
-const defaultState = () => {
-  
+const defaultState = {
+  people: [],
+
 }
 
 const Index = () => {
