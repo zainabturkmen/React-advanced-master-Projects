@@ -21,7 +21,6 @@ const Index = () => {
       setShowModal(true)
     }
   }
-
   return (
     <>
       {showModal && <Modal />}
