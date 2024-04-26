@@ -14,6 +14,7 @@ const Index = () => {
     if (name) {
       showModal(true);
       setPeople([...people,{id:new Date().getTime().toString(), name}])
+      setName("")
     }
 
     else{
