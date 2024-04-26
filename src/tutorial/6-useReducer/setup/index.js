@@ -5,6 +5,7 @@ import { data } from '../../../data';
 // reducer function
 
 const Index = () => {
+  const [value, setValue] = useState("")
   const [people, setPeople] = useState(data)
   const [showModal, setShowModal] = useState(false)
   const []
@@ -12,7 +13,7 @@ const Index = () => {
   {showModal && <Modal />}
   <form onSubmit={handleSubmit}>
     <div >
-      <input type='text' />
+      <input type='text' value={value} />
     </div>
   </form>
   </>
