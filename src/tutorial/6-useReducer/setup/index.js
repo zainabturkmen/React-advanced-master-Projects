@@ -11,6 +11,12 @@ const Index = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    if (name) {
+      
+    }
+    else{
+      showModal(true)
+    }
   }
 
   return (
