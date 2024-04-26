@@ -7,7 +7,8 @@ import { data } from '../../../data';
 const Index = () => {
   const [people, setPeople] = useState(data)
   const [showModal, setShowModal] = useState(false)
-  return <h2>useReducer</h2>; 
+  const []
+  return <></>
 };
 
 export default Index;
