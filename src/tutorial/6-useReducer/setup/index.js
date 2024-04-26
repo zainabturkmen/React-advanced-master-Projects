@@ -4,6 +4,10 @@ import { data } from "../../../data";
 
 // reducer function
 const reducer = (state, action) => {
+
+}
+
+const defaultState = () => {
   
 }
 
