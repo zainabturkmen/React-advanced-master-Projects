@@ -1,6 +1,7 @@
 import React, { useState, useReducer } from "react";
 import Modal from "./Modal";
 import { data } from "../../../data";
+import { type } from "@testing-library/user-event/dist/type";
 
 // reducer function
 
@@ -22,7 +23,7 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (name) {
-      dispatch({})
+      dispatch({type:})
    }
 
     else{
