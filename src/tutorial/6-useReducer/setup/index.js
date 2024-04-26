@@ -3,6 +3,7 @@ import Modal from "./Modal";
 import { data } from "../../../data";
 
 // reducer function
+
 const reducer = (state, action) => {
 
 }
@@ -11,12 +12,11 @@ const defaultState = {
   people: [],
   isModalOpen: false,
   modalContent: "hello world"
-
 }
 
 const Index = () => {
   const [name, setName] = useState("");
-  const [state, dispatch] = useReducer(reducer)
+  const [state, dispatch] = useReducer(reducer, defaultState);
   
 
   const handleSubmit = (e) => {
