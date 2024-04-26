@@ -9,7 +9,7 @@ const reducer = (state, action) => {
 }
 
 const defaultState = {
-  people: data,
+  people: [],
   isModalOpen: true,
   modalContent: "hello world"
 }
