@@ -8,7 +8,10 @@ const Index = () => {
   const [people, setPeople] = useState(data)
   const [showModal, setShowModal] = useState(false)
   const []
-  return <></>
+  return <>
+  {showModal && <Modal />}
+  <form className=''></form>
+  </>
 };
 
 export default Index;
