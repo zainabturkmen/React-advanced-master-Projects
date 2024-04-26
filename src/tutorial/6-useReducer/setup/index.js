@@ -12,6 +12,7 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
   }
+  
   return (
     <>
       {showModal && <Modal />}
