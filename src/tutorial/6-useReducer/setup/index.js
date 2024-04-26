@@ -36,7 +36,11 @@ const Index = () => {
         <button type="submit">add</button>
       </form>
       {people.map((person)=> {
-        return <div key={person.id}></div>
+        return (
+          <div key={person.id}>
+            <h4>{person.name}</h4>
+          </div>
+        );
       })}
     </>
   );
