@@ -12,11 +12,11 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
   }
-  
+
   return (
     <>
       {showModal && <Modal />}
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form">
         <div>
           <input
             type="text"
@@ -24,6 +24,7 @@ const Index = () => {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
+        <button type="submit">add</button>
       </form>
     </>
   );
