@@ -6,8 +6,7 @@ import { data } from "../../../data";
 
 const Index = () => {
   const [name, setName] = useState("");
-  const [people, setPeople] = useState(data);
-  const [showModal, setShowModal] = useState(false);
+  
 
   const handleSubmit = (e) => {
     e.preventDefault()
