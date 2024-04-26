@@ -12,7 +12,7 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (name) {
-      
+      showModal(true);
     }
     else{
       showModal(true)
