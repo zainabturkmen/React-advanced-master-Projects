@@ -22,6 +22,7 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (name) {
+      dispatch({})
    }
 
     else{
