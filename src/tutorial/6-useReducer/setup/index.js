@@ -35,6 +35,9 @@ const Index = () => {
         </div>
         <button type="submit">add</button>
       </form>
+      {people.map((person)=> {
+        
+      })}
     </>
   );
 };
