@@ -7,10 +7,10 @@ import { type } from "@testing-library/user-event/dist/type";
 
 const reducer = (state, action) => {
   if (action.type === "ADD_ITEM") {
-    const newPeople = [...state]
+    const newPeople = [...state.items, action.payload]
     return {
       ...state,
-      people: [],
+      people: newPeople,
       isModalOpen: true,
       modalContent: "item added",
     };
