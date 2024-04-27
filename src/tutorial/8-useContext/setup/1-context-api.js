@@ -20,7 +20,7 @@ const ContextAPI = () => {
   );
 };
 
-const List = ({ people, removePerson }) => {
+const List = ({ people }) => {
   return (
     <>
       {people.map((person) => {
@@ -28,7 +28,6 @@ const List = ({ people, removePerson }) => {
           <SinglePerson
             key={person.id}
             {...person}
-            removePerson={removePerson}
           />
         );
       })}
