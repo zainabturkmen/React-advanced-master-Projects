@@ -7,7 +7,8 @@ import { type } from "@testing-library/user-event/dist/type";
 
 const reducer = (state, action) => {
   if (action.type === "ADD_ITEM") {
-    const newPeople = [...state.items, action.payload]
+    const newPeople = [...state.people, action.payload];
+
     return {
       ...state,
       people: newPeople,
@@ -32,7 +33,8 @@ const Index = () => {
     e.preventDefault();
     if (name) {
       const newItem = {id: new Date().getTime().toString(), name}
-      dispatch({ type: "  ADD_ITEM", payload: newItem });
+      dispatch({ type: "ADD_ITEM", payload: newItem });
+      setName("")
     } else {
       dispatch({type: "RANDOM"})
     }
