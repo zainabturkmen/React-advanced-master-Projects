@@ -15,15 +15,13 @@ const PropDrilling = () => {
 };
 
 const List = ({ people }) => {
-  return <>
-  {people.map((person) => {
-    return (
-    <SinglePerson key={person.id}/>
-    )
-  })} 
-  
-
-  </>;
+  return (
+    <>
+      {people.map((person) => {
+        return <SinglePerson key={person.id} />;
+      })}
+    </>
+  );
 };
 
 const SinglePerson = ({ id, name }) => {
