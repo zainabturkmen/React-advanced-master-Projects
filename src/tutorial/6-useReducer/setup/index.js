@@ -30,7 +30,7 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
-      const newItem = {}
+      const newItem = {id: new Date().getTime().toString(), name}
       dispatch({ type: "  ADD_ITEM" });
     } else {
       dispatch({type: "RANDOM"})
