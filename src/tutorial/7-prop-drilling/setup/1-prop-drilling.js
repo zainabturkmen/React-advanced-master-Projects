@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { data } from "../.../.../data";
+import { data } from "../../../data";
 
 // more components
 // fix - context api, redux (for more complex cases)
@@ -15,12 +15,22 @@ const PropDrilling = () => {
 };
 
 const List = ({ people }) => {
-  return <>{people.map((person) => {
+  return <>
+  {people.map((person) => {
+    return (
+    <SinglePerson />
+    )
+  })} 
+  
 
-  })} </>;
+  </>;
 };
 
-const SinglePerson = () => {
-  
-}
+const SinglePerson = ({ id, name }) => {
+  return (
+    <div key={id} className="item">
+      <h4>single item</h4>
+    </div>
+  );
+};
 export default PropDrilling;
