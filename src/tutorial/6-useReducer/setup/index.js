@@ -9,7 +9,7 @@ const reducer = (state, action) => {
   if (action.type === "ADD_ITEM") {
     return {
       ...state,
-      people: data,
+      people: [],
       isModalOpen: true,
       modalContent: "item added",
     };
