@@ -12,8 +12,11 @@ const PropDrilling = () => {
       <List people={people} />
     </section>
   )
-
-
 };
 
+const List = () => {
+  return(
+    
+  )
+}
 export default PropDrilling;
