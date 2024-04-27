@@ -30,7 +30,11 @@ const reducer = (state, action) => {
     }
 
     if (action.type === "REMOVE_ITEM") {
-      const new
+      const newPeople = state.people.filter((person)=> person.id !== action.payload)
+      return {
+        ...state,
+        
+      }
     }
   throw new Error("no matching action type");
 };
