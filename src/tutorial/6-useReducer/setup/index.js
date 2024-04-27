@@ -36,7 +36,7 @@ const Index = () => {
       dispatch({ type: "ADD_ITEM", payload: newItem });
       setName("")
     } else {
-      dispatch({type: "RANDOM"})
+      dispatch({type: "NO_VALUE"})
     }
   };
   return (
