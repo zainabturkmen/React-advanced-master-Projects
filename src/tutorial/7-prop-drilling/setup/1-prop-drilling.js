@@ -6,6 +6,10 @@ import { data } from "../../../data";
 
 const PropDrilling = () => {
   const [people, setPeople] = useState(data);
+  
+  const removePerson = () {
+
+  }
   return (
     <section className="">
       <h3>Prop drilling</h3>
