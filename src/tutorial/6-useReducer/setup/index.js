@@ -21,6 +21,9 @@ const reducer = (state, action) => {
       return { ...state, isModalOpen: true, modalContent: "please enter value" };
     }
   
+    if () {
+      
+    }
   throw new Error("no matching action type");
 };
 
@@ -48,7 +51,7 @@ const Index = () => {
   const closeModal = () => {
       dispatch({type: "CLOSE_MODAL"})
   }
-  
+
   return (
     <>
       {state.isModalOpen && <Modal modalContent={state.modalContent} />}
