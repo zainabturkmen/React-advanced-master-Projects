@@ -36,7 +36,7 @@ const List = ({ people, removePerson }) => {
   );
 };
 
-const SinglePerson = ({ id, name }) => {
+const SinglePerson = ({ id, name  , removePerson}) => {
   return (
     <div className="item">
       <h4>single item</h4>
