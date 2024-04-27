@@ -33,7 +33,7 @@ const Index = () => {
     if (name) {
       dispatch({ type: "TESTING" });
     } else {
-      dispatch({type: ""})
+      dispatch({type: "RANDOM"})
     }
   };
   return (
