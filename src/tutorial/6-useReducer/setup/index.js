@@ -28,6 +28,10 @@ const reducer = (state, action) => {
         modalContent: ""
       }
     }
+
+    if (action.type === "REMOVE_ITEM") {
+      const new
+    }
   throw new Error("no matching action type");
 };
 
