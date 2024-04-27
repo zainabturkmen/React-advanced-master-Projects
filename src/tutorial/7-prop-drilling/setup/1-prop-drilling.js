@@ -8,7 +8,9 @@ const PropDrilling = () => {
   const [people, setPeople] = useState(data);
 
   const removePerson = (id) {
-
+    setPeople((people)=> {
+      
+    })
   }
   return (
     <section className="">
