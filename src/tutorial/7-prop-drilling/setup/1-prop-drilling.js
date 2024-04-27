@@ -39,7 +39,7 @@ const List = ({ people, removePerson }) => {
 const SinglePerson = ({ id, name  , removePerson}) => {
   return (
     <div className="item">
-      <h4>single item</h4>
+      <h4>{name}</h4>
     </div>
   );
 };
