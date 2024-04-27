@@ -6,6 +6,7 @@ import { type } from "@testing-library/user-event/dist/type";
 // reducer function
 
 const reducer = (state, action) => {
+  console.log(state, action);
   return state; 
 }
 
