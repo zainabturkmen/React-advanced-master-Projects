@@ -18,7 +18,7 @@ const List = ({ people }) => {
   return <>
   {people.map((person) => {
     return (
-    <SinglePerson />
+    <SinglePerson key={person.id}/>
     )
   })} 
   
@@ -28,7 +28,7 @@ const List = ({ people }) => {
 
 const SinglePerson = ({ id, name }) => {
   return (
-    <div key={id} className="item">
+    <div className="item">
       <h4>single item</h4>
     </div>
   );
