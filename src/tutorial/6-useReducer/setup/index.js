@@ -33,7 +33,7 @@ const reducer = (state, action) => {
       const newPeople = state.people.filter((person)=> person.id !== action.payload)
       return {
         ...state,
-        
+        people: newPeople
       }
     }
   throw new Error("no matching action type");
