@@ -14,6 +14,8 @@ const reducer = (state, action) => {
       modalContent: "item added",
     };
   }
+   
+  throw new Error ("no matching action type")
 };
 
 const defaultState = {
