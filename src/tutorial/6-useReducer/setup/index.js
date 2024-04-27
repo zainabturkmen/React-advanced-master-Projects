@@ -12,7 +12,7 @@ const reducer = (state, action) => {
 const defaultState = {
   people: [],
   isModalOpen: false,
-  modalContent: "",
+  modalContent: ""
 }
 
 const Index = () => {
@@ -23,7 +23,7 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (name) {
-      dispatch({type:"testing"})
+      dispatch({type:""})
    }
 
     else{
