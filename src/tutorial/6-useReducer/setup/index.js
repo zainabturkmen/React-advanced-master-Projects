@@ -14,7 +14,6 @@ const reducer = (state, action) => {
       modalContent: "item added",
     };
   }
-  return state;
 };
 
 const defaultState = {
