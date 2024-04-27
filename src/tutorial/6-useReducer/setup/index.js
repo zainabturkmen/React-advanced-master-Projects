@@ -6,7 +6,9 @@ import { type } from "@testing-library/user-event/dist/type";
 // reducer function
 
 const reducer = (state, action) => {
-
+  return {
+    
+  }
 }
 
 const defaultState = {
