@@ -44,6 +44,10 @@ const Index = () => {
       dispatch({ type: "NO_VALUE" });
     }
   };
+
+  const closeModal = () => {
+      dispatch({type: ""})
+  }
   return (
     <>
       {state.isModalOpen && <Modal modalContent={state.modalContent} />}
