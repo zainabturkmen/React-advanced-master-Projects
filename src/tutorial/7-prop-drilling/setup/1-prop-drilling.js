@@ -16,7 +16,11 @@ const PropDrilling = () => {
 
 const List = ({ people }) => {
   return <>{people.map((person) => {
-    
+
   })} </>;
 };
+
+const SinglePerson = () => {
+  
+}
 export default PropDrilling;
