@@ -9,7 +9,7 @@ const PropDrilling = () => {
   return (
     <section className="">
       <h3>Prop drilling</h3>
-      <List people={} />
+      <List people={people} />
     </section>
   )
 
