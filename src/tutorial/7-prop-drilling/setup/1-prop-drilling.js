@@ -6,8 +6,8 @@ import { data } from "../../../data";
 
 const PropDrilling = () => {
   const [people, setPeople] = useState(data);
-  
-  const removePerson = () {
+
+  const removePerson = (id) {
 
   }
   return (
