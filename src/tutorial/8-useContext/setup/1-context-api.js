@@ -37,7 +37,7 @@ const List = ({ people, removePerson }) => {
 };
 
 const SinglePerson = ({ id, name, removePerson }) => {
-  const data = useContext(PersonContext)
+  const {removePerson} = useContext(PersonContext)
   return (
     <div className='item'>
       <h4>{name}</h4>
