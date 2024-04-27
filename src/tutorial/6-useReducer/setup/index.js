@@ -6,35 +6,37 @@ import { type } from "@testing-library/user-event/dist/type";
 // reducer function
 
 const reducer = (state, action) => {
-  if(action.type === "TESTING"){
-    return {...state, people:data, isModalOpen:true, modalContent: ""}
+  if (action.type === "TESTING") {
+    return {
+      ...state,
+      people: data,
+      isModalOpen: true,
+      modalContent: "item added",
+    };
   }
   return state;
-}
+};
 
 const defaultState = {
   people: [],
   isModalOpen: false,
   modalContent: "",
-}
+};
 
 const Index = () => {
   const [name, setName] = useState("");
   const [state, dispatch] = useReducer(reducer, defaultState);
-  
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (name) {
-      dispatch({type:"TESTING"})
-   }
-
-    else{
+      dispatch({ type: "TESTING" });
+    } else {
     }
-  }
+  };
   return (
     <>
-      {state.isModalOpen && <Modal modalContent={state.modalContent}/>}
+      {state.isModalOpen && <Modal modalContent={state.modalContent} />}
       <form onSubmit={handleSubmit} className="form">
         <div>
           <input
@@ -45,7 +47,7 @@ const Index = () => {
         </div>
         <button type="submit">add</button>
       </form>
-      {state.people.map((person)=> {
+      {state.people.map((person) => {
         return (
           <div key={person.id}>
             <h4>{person.name}</h4>
