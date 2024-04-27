@@ -5,18 +5,18 @@ import { data } from "../.../.../data";
 // fix - context api, redux (for more complex cases)
 
 const PropDrilling = () => {
-  const [people, setPeople] = useState(data)
+  const [people, setPeople] = useState(data);
   return (
     <section className="">
       <h3>Prop drilling</h3>
       <List people={people} />
     </section>
-  )
+  );
 };
 
-const List = () => {
-  return(
+const List = ({ people }) => {
+  return <>{people.map((person) => {
     
-  )
-}
+  })} </>;
+};
 export default PropDrilling;
