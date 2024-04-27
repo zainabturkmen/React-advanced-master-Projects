@@ -46,7 +46,7 @@ const Index = () => {
   };
 
   const closeModal = () => {
-      dispatch({type: ""})
+      dispatch({type: "CLOSE_MODAL"})
   }
   return (
     <>
