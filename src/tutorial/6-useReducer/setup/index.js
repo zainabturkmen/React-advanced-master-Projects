@@ -15,12 +15,13 @@ const reducer = (state, action) => {
       isModalOpen: true,
       modalContent: "item added",
     };
-
-    if (action.type === "NO_VALUE") {
-      
     }
-  }
-  throw new Error ("no matching action type")
+ 
+    if (action.type === "NO_VALUE") {
+      return { ...state, showMOdal: true, mofalContent: "please enter value" };
+    }
+  
+  throw new Error("no matching action type");
 };
 
 const defaultState = {
@@ -36,11 +37,11 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
-      const newItem = {id: new Date().getTime().toString(), name}
+      const newItem = { id: new Date().getTime().toString(), name };
       dispatch({ type: "ADD_ITEM", payload: newItem });
-      setName("")
+      setName("");
     } else {
-      dispatch({type: "NO_VALUE"})
+      dispatch({ type: "NO_VALUE" });
     }
   };
   return (
