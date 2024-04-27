@@ -15,6 +15,10 @@ const reducer = (state, action) => {
       isModalOpen: true,
       modalContent: "item added",
     };
+
+    if (action.type === "NO_VALUE") {
+      
+    }
   }
   throw new Error ("no matching action type")
 };
