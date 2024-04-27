@@ -30,6 +30,7 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
+      
       dispatch({ type: "  ADD_ITEM" });
     } else {
       dispatch({type: "RANDOM"})
