@@ -9,7 +9,9 @@ const PropDrilling = () => {
 
   const removePerson = (id) => {
     setPeople((people)=> {
-
+      return people.filter((person)=> {
+        
+      })
     })
   }
   return (
