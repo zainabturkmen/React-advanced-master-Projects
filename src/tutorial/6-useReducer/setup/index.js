@@ -6,7 +6,7 @@ import { type } from "@testing-library/user-event/dist/type";
 // reducer function
 
 const reducer = (state, action) => {
-  if (action.type === "TESTING") {
+  if (action.type === "ADD_ITEM") {
     return {
       ...state,
       people: data,
