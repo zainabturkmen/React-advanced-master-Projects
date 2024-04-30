@@ -19,10 +19,10 @@ Product.propTypes = {
   price: PropTypes.number.isRequired,
 };
 
-Product.defaultProps = {
-  name: "default name",
-  price: 3.99,
-  image: defaultImage,
-};
+// Product.defaultProps = {
+//   name: "default name",
+//   price: 3.99,
+//   image: defaultImage,
+// };
 
 export default Product;
