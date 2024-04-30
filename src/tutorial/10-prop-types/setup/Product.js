@@ -16,7 +16,8 @@ Product.PropTypes = {
 }
 
 Product.defaultProps = {
-  name: "default name"
+  name: "default name",
+  price: 3.99
 }
 
 export default Product;
