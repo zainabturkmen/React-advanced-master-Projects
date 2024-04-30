@@ -23,6 +23,7 @@ const Index = () => {
       <button className='btn' onClick={() => setCount(count + 1)}>
         click me
       </button>
+      <h1 style={{marginTop: "3rem"}}>cart : {cart}</h1>
       <BigList products={products} />
     </>
   )
