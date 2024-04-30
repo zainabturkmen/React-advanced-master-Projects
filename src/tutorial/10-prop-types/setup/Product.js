@@ -15,6 +15,8 @@ Product.PropTypes = {
   price: PropTypes.number.isRequired,
 }
 
-Product.defaultProps = 
+Product.defaultProps = {
+  name: "default name"
+}
 
 export default Product;
