@@ -6,8 +6,8 @@ const Product = ({image,name, price }) => {
 
   return <article className='product'>
     <h4>Single products</h4>
-    
-  </article>;
+    <img src={image.url} alt={name} />
+    </article>;
 };
 
 Product.PropTypes = {
@@ -19,7 +19,7 @@ Product.PropTypes = {
 Product.defaultProps = {
   name: "default name",
   price: 3.99,
-  image: 
+  image: defaultImage,
 }
 
 export default Product;
