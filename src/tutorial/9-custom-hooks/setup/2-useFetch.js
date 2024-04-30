@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const useFetch = () => {
+export const useFetch = (url) => {
     const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState([]);
 
