@@ -14,7 +14,7 @@ const Index = () => {
 
   const addToCart = useCallback(() => {
     setCart(cart + 1);
-  });
+  },[cart]);
 
   return (
     <>
