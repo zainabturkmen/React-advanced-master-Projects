@@ -10,6 +10,7 @@ const url = 'https://www.course-api.com/javascript-store-products'
 const Index = () => {
   const { products } = useFetch(url)
   const [count, setCount] = useState(0)
+  const [cart, setcart] = useState(0)
 
   return (
     <>
