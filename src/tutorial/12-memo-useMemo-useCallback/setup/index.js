@@ -7,6 +7,10 @@ const url = "https://www.course-api.com/javascript-store-products";
 
 // every time props or state changes, component re-renders
 
+const calculateMostExpensive()
+
+
+
 const Index = () => {
   const { products } = useFetch(url);
   const [count, setCount] = useState(0);
