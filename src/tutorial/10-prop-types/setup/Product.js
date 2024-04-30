@@ -13,7 +13,8 @@ Product.PropTypes = {
   image: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-
 }
+
+Product.defaultProps = 
 
 export default Product;
