@@ -9,4 +9,11 @@ const Product = ({image,name, price }) => {
   </article>;
 };
 
+Product.PropTypes = {
+  image: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+
+}
+
 export default Product;
