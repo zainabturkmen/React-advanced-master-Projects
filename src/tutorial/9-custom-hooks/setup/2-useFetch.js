@@ -15,5 +15,5 @@ export const useFetch = () => {
       getProducts();
     }, [url]);
 
-    return {}
+    return {loading, products}
 };
