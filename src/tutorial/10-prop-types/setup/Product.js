@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types"
+import defaultImage from "../../../assets/default-image.jpeg"
 
 const Product = ({image,name, price }) => {
 
@@ -17,7 +18,8 @@ Product.PropTypes = {
 
 Product.defaultProps = {
   name: "default name",
-  price: 3.99
+  price: 3.99,
+  image: 
 }
 
 export default Product;
