@@ -22,10 +22,10 @@ const Index = () => {
   )
 }
 
-const BigList = ({ products }) => {
+const BigList = React.memo(({ products }) => {
 
   useEffect(()=> {
-    
+
   })
   return (
     <section className='products'>
@@ -34,9 +34,10 @@ const BigList = ({ products }) => {
       })}
     </section>
   )
-}
+})
 
 const SingleProduct = ({ fields }) => {
+    useEffect(() => {});
   let { name, price } = fields
   price = price / 100
   const image = fields.image[0].url
