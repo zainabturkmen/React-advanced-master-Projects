@@ -23,6 +23,10 @@ const Index = () => {
 }
 
 const BigList = ({ products }) => {
+
+  useEffect(()=> {
+    
+  })
   return (
     <section className='products'>
       {products.map((product) => {
