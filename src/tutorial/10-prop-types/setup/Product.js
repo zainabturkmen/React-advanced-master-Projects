@@ -12,7 +12,7 @@ const Product = ({image,name, price }) => {
     </article>;
 };
 
-Product.PropTypes = {
+Product.propTypes = {
   image: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
